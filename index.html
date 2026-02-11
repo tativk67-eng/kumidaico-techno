@@ -117,4 +117,168 @@ footer {
 /* FRASE ARTÍSTICA */
 
 .frase {
-    margin-top
+    margin-top: 40px;
+    font-style: italic;
+    line-height: 1.9;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1.8s ease;
+    color: #ccc;
+}
+
+.frase.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>KUMIDAICO TECHNO</h1>
+<p>Archivo underground · Cultura · Historia · Escena</p>
+
+<a href="https://www.instagram.com/kumidaico/" target="_blank" class="instagram-link">
+INSTAGRAM · @KUMIDAICO
+</a>
+
+<br>
+
+<a href="https://www.instagram.com/juantativk/" target="_blank" class="instagram-link">
+JUANTATIVK · INSTAGRAM PERSONAL
+</a>
+
+</header>
+
+<img src="IMG_20260208_231809.jpg">
+<img src="file_00000000698471f891ad9e52514c0248.png">
+
+<nav>
+<button onclick="showSection('historia')">HISTORIA</button>
+<button onclick="showSection('libros')">LIBROS</button>
+<button onclick="showSection('peliculas')">PELÍCULAS</button>
+<button onclick="showSection('djs')">DJS</button>
+<button onclick="showSection('eventos')">SALAS</button>
+</nav>
+
+<div id="historia" class="section">
+<h2>HISTORIA</h2>
+<p>
+El techno nace en Detroit en los años 80 gracias a Juan Atkins, Derrick May y Kevin Saunderson.
+Inspirado por el futurismo y la identidad industrial, se convierte en una revolución cultural global.
+</p>
+<p>
+Tras la caída del muro, Berlín toma el relevo como epicentro del techno underground.
+Desde allí la cultura se expande por Europa y el mundo.
+</p>
+</div>
+
+<div id="libros" class="section">
+<h2>LIBROS ESENCIALES</h2>
+<p><a href="https://www.amazon.es/s?k=Energy+Flash+Simon+Reynolds" target="_blank">Energy Flash – Simon Reynolds</a></p>
+<p><a href="https://www.amazon.es/s?k=Techno+Rebels+Dan+Sicko" target="_blank">Techno Rebels – Dan Sicko</a></p>
+<p><a href="https://www.amazon.es/s?k=Der+Klang+der+Familie" target="_blank">Der Klang der Familie</a></p>
+<p><a href="https://www.amazon.es/s?k=Join+The+Future+Matt+Anniss" target="_blank">Join The Future – Matt Anniss</a></p>
+<p><a href="https://www.amazon.es/s?k=Last+Night+a+DJ+Saved+My+Life" target="_blank">Last Night a DJ Saved My Life – Bill Brewster</a></p>
+</div>
+
+<div id="peliculas" class="section">
+<h2>PELÍCULAS Y DOCUMENTALES</h2>
+<p><a href="https://www.youtube.com/results?search_query=Berlin+Calling" target="_blank">Berlin Calling</a></p>
+<p><a href="https://www.youtube.com/results?search_query=We+Call+It+Techno+Documentary" target="_blank">We Call It Techno</a></p>
+<p><a href="https://www.youtube.com/results?search_query=SubBerlin+Story+of+Tresor" target="_blank">SubBerlin – Historia de Tresor</a></p>
+<p><a href="https://www.youtube.com/results?search_query=High+Tech+Soul+Detroit+Techno+Documentary" target="_blank">High Tech Soul</a></p>
+</div>
+
+<div id="djs" class="section">
+<h2>DJS DE REFERENCIA</h2>
+
+<h3>DETROIT · ORIGEN</h3>
+<p>Juan Atkins</p>
+<p>Derrick May</p>
+<p>Kevin Saunderson</p>
+<p>Jeff Mills</p>
+
+<h3>INDUSTRIAL · UK · EUROPA CRUDA</h3>
+<p>Regis</p>
+<p>Surgeon</p>
+<p>Dave Clarke</p>
+<p>Paula Temple</p>
+
+<h3>ESPAÑA · ESCENA CRUDA</h3>
+<p>Oscar Mulero</p>
+<p>Adriana López</p>
+<p>Reeko</p>
+<p>Exium</p>
+<p>Christian Wunsch</p>
+<p>Emilio del Río</p>
+
+<h3>JAPÓN · TECNOLOGÍA · OSCURIDAD</h3>
+<p>Ken Ishii</p>
+<p>DJ Nobu</p>
+<p>Wata Igarashi</p>
+<p>Fumiya Tanaka</p>
+
+</div>
+
+<div id="eventos" class="section">
+<h2>ESCENA ACTUAL</h2>
+<p>Mørk – Sala Wave</p>
+<p>Speka</p>
+<p>Laster Club</p>
+<p>La Metro Dance Club</p>
+</div>
+
+<footer>
+
+<p>
+<a href="https://www.instagram.com/kumidaico/" target="_blank" class="instagram-link">
+@KUMIDAICO
+</a>
+</p>
+
+<p>
+<a href="https://www.instagram.com/juantativk/" target="_blank" class="instagram-link">
+@JUANTATIVK
+</a>
+</p>
+
+<div class="frase">
+El más puro TECHNO palpita fuerte y sensible, es insobornable, valiente y único.<br>
+El más puro TECHNO rechaza lo obsceno y detecta la perversión.<br>
+El más puro TECHNO no finge el amor ni finge la libertad.<br>
+TECHNO somos tú y yo.<br><br>
+— Sonia Briz
+</div>
+
+<p style="margin-top:50px;">Proyecto cultural underground – Juantativk</p>
+
+</footer>
+
+<script>
+function showSection(id) {
+    var sections = document.querySelectorAll('.section');
+    sections.forEach(function(section) {
+        section.style.display = "none";
+    });
+    document.getElementById(id).style.display = "block";
+}
+
+window.addEventListener("scroll", function() {
+    var frase = document.querySelector(".frase");
+    var posicion = frase.getBoundingClientRect().top;
+    var pantalla = window.innerHeight;
+
+    if (posicion < pantalla - 100) {
+        frase.classList.add("visible");
+    }
+});
+</script>
+
+</body>
+</html>
