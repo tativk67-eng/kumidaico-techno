@@ -3,174 +3,209 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KUMIDAICO | Archivo Underground</title>
+<title>Kumidaico Techno</title>
 
 <style>
-body{
-    margin:0;
-    background:#000;
-    color:#eee;
-    font-family:Arial, Helvetica, sans-serif;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: #fff;
+    text-align: center;
 }
 
-header{
-    text-align:center;
-    padding:60px 20px;
-    font-size:40px;
-    letter-spacing:6px;
+header {
+    padding: 60px 20px;
+    background: linear-gradient(black, #111);
 }
 
-section{
-    max-width:1000px;
-    margin:auto;
-    padding:40px 20px;
+h1 {
+    font-size: 42px;
+    letter-spacing: 4px;
 }
 
-h2{
-    border-bottom:1px solid #222;
-    padding-bottom:10px;
-    letter-spacing:3px;
+nav {
+    margin: 40px 0;
 }
 
-.item{
-    border:1px solid #222;
-    padding:15px;
-    margin:15px 0;
-    cursor:pointer;
-    transition:0.3s;
+nav button {
+    background: #111;
+    color: #fff;
+    border: 1px solid #333;
+    padding: 12px 22px;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
 }
 
-.item:hover{
-    background:#111;
+nav button:hover {
+    background: #fff;
+    color: #000;
 }
 
-.content{
-    display:none;
-    margin-top:10px;
-    font-size:14px;
-    color:#bbb;
+.section {
+    display: none;
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
 }
 
-button{
-    margin-top:10px;
-    padding:8px 15px;
-    background:#111;
-    border:1px solid #333;
-    color:white;
-    cursor:pointer;
+img {
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 0 20px #111;
 }
 
-button:hover{
-    background:#222;
+a {
+    color: #00ffcc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+h3 {
+    margin-top: 40px;
+    color: #aaa;
+}
+
+footer {
+    padding: 40px;
+    background: #111;
+    margin-top: 60px;
+    font-size: 14px;
 }
 </style>
 </head>
 
 <body>
 
-<header>KUMIDAICO</header>
+<header>
+<h1>KUMIDAICO TECHNO</h1>
+<p>Archivo underground · Cultura · Historia · Escena</p>
+</header>
 
-<section>
-<h2>DJ's</h2>
+<!-- IMÁGENES -->
+<img src="IMG_20260208_231809.jpg">
+<img src="file_00000000698471f891ad9e52514c0248.png">
 
-<div class="item">
-<strong>Jeff Mills</strong>
-<div class="content">
-Padre del techno Detroit.
-<br>
-<button onclick="window.open('https://www.youtube.com/results?search_query=Jeff+Mills+techno+set','_blank')">
-Ver sets en YouTube
-</button>
-</div>
-</div>
+<!-- MENÚ -->
+<nav>
+<button onclick="showSection('historia')">Historia</button>
+<button onclick="showSection('libros')">Libros</button>
+<button onclick="showSection('peliculas')">Películas</button>
+<button onclick="showSection('djs')">DJs</button>
+<button onclick="showSection('eventos')">Salas</button>
+</nav>
 
-<div class="item">
-<strong>Surgeon</strong>
-<div class="content">
-Industrial techno Birmingham.
-<br>
-<button onclick="window.open('https://www.youtube.com/results?search_query=Surgeon+techno+set','_blank')">
-Ver sets en YouTube
-</button>
-</div>
-</div>
-
-<div class="item">
-<strong>Ben Klock</strong>
-<div class="content">
-Techno berlinés contundente.
-<br>
-<button onclick="window.open('https://www.youtube.com/results?search_query=Ben+Klock+techno','_blank')">
-Ver sets en YouTube
-</button>
-</div>
+<!-- HISTORIA -->
+<div id="historia" class="section">
+<h2>Historia del Techno</h2>
+<p>
+El techno nace en Detroit en los años 80 gracias a Juan Atkins, Derrick May y Kevin Saunderson.
+Inspirado por el futurismo, la electrónica europea y la identidad afroamericana industrial,
+se convirtió en una revolución cultural.
+</p>
+<p>
+Tras la caída del muro, Berlín se transforma en capital del techno underground.
+Desde ahí, la cultura se expande por Europa y el mundo.
+</p>
 </div>
 
-</section>
+<!-- LIBROS -->
+<div id="libros" class="section">
+<h2>Libros esenciales</h2>
 
-<section>
-<h2>Libros</h2>
+<p><a href="https://www.amazon.es/dp/0571282827" target="_blank">Energy Flash – Simon Reynolds</a></p>
+<p><a href="https://www.amazon.es/dp/0819563401" target="_blank">Techno Rebels – Dan Sicko</a></p>
+<p><a href="https://www.amazon.es/dp/1785584325" target="_blank">Der Klang der Familie</a></p>
+<p><a href="https://www.amazon.es/dp/1913231046" target="_blank">Join The Future – Matt Anniss</a></p>
 
-<div class="item">
-<strong>Energy Flash – Simon Reynolds</strong>
-<div class="content">
-Historia completa de la música electrónica.
-<br>
-<button onclick="window.open('https://www.amazon.es/s?k=Energy+Flash+Simon+Reynolds','_blank')">
-Comprar
-</button>
-</div>
 </div>
 
-<div class="item">
-<strong>Techno Rebels – Dan Sicko</strong>
-<div class="content">
-Historia del techno en Detroit.
-<br>
-<button onclick="window.open('https://www.amazon.es/s?k=Techno+Rebels+Dan+Sicko','_blank')">
-Comprar
-</button>
-</div>
+<!-- PELÍCULAS -->
+<div id="peliculas" class="section">
+<h2>Películas y Documentales</h2>
+
+<p><a href="https://www.youtube.com/results?search_query=Berlin+Calling" target="_blank">Berlin Calling</a></p>
+<p><a href="https://www.youtube.com/results?search_query=We+Call+It+Techno+Documentary" target="_blank">We Call It Techno</a></p>
+<p><a href="https://www.youtube.com/results?search_query=SubBerlin+Story+of+Tresor" target="_blank">SubBerlin – Historia de Tresor</a></p>
+<p><a href="https://www.youtube.com/results?search_query=High+Tech+Soul+Detroit+Techno+Documentary" target="_blank">High Tech Soul</a></p>
+
 </div>
 
-</section>
+<!-- DJs -->
+<div id="djs" class="section">
+<h2>DJs de referencia</h2>
 
-<section>
-<h2>Documentales</h2>
+<h3>Detroit</h3>
+<p><a href="https://www.youtube.com/results?search_query=Juan+Atkins+DJ+set" target="_blank">Juan Atkins</a></p>
+<p><a href="https://www.youtube.com/results?search_query=Derrick+May+DJ+set" target="_blank">Derrick May</a></p>
+<p><a href="https://www.youtube.com/results?search_query=Kevin+Saunderson+DJ+set" target="_blank">Kevin Saunderson</a></p>
+<p><a href="https://www.youtube.com/results?search_query=Jeff+Mills+DJ+set" target="_blank">Jeff Mills</a></p>
 
-<div class="item">
-<strong>High Tech Soul</strong>
-<div class="content">
-Nacimiento del techno Detroit.
-<br>
-<button onclick="window.open('https://www.youtube.com/results?search_query=High+Tech+Soul+documental','_blank')">
-Ver documental
-</button>
-</div>
+<h3>Berlín</h3>
+<p><a href="https://www.youtube.com/results?search_query=Ben+Klock+DJ+set" target="_blank">Ben Klock</a></p>
+<p><a href="https://www.youtube.com/results?search_query=Marcel+Dettmann+DJ+set" target="_blank">Marcel Dettmann</a></p>
+<p><a href="https://www.youtube.com/results?search_query=Rødhåd+DJ+set" target="_blank">Rødhåd</a></p>
+<p><a href="https://www.youtube.com/results?search_query=Ellen+Allien+DJ+set" target="_blank">Ellen Allien</a></p>
+
+<h3>España</h3>
+<p><a href="https://www.youtube.com/results?search_query=Oscar+Mulero+DJ+set" target="_blank">Oscar Mulero</a></p>
+<p><a href="https://www.youtube.com/results?search_query=Reeko+DJ+set" target="_blank">Reeko</a></p>
+<p><a href="https://www.youtube.com/results?search_query=Exium+DJ+set" target="_blank">Exium</a></p>
+<p><a href="https://www.youtube.com/results?search_query=Christian+Wunsch+DJ+set" target="_blank">Christian Wunsch</a></p>
+
+<h3>Actualidad</h3>
+<p><a href="https://www.youtube.com/results?search_query=DVS1+DJ+set" target="_blank">DVS1</a></p>
+<p><a href="https://www.youtube.com/results?search_query=Blawan+DJ+set" target="_blank">Blawan</a></p>
+<p><a href="https://www.youtube.com/results?search_query=I+Hate+Models+DJ+set" target="_blank">I Hate Models</a></p>
+<p><a href="https://www.youtube.com/results?search_query=Paula+Temple+DJ+set" target="_blank">Paula Temple</a></p>
+
 </div>
 
-<div class="item">
-<strong>SubBerlin</strong>
-<div class="content">
-Historia del club Tresor.
-<br>
-<button onclick="window.open('https://www.youtube.com/results?search_query=SubBerlin+Tresor+documental','_blank')">
-Ver documental
-</button>
-</div>
+<!-- SALAS -->
+<div id="eventos" class="section">
+<h2>Salas y Escena Actual</h2>
+
+<h3>Mallorca</h3>
+<p><a href="https://www.instagram.com/mork.club/" target="_blank"><strong>Mørk</strong> – Sala Wave</a></p>
+
+<h3>Gijón</h3>
+<p><a href="https://www.instagram.com/lannaclub/" target="_blank"><strong>Lanna Club</strong></a></p>
+
+<h3>Madrid</h3>
+<p><a href="https://www.instagram.com/speka_madrid/" target="_blank"><strong>Speka</strong></a></p>
+<p><a href="https://www.instagram.com/studio76madrid/" target="_blank"><strong>Studio 76</strong></a></p>
+<p><a href="https://www.instagram.com/lasterclub/" target="_blank"><strong>Laster Club</strong></a></p>
+<p><a href="https://www.instagram.com/lasocion_/" target="_blank"><strong>Lasociøn</strong></a></p>
+
+<h3>Alicante</h3>
+<p><a href="https://www.instagram.com/metrodanceclub/" target="_blank"><strong>La Metro Dance Club</strong></a></p>
+
 </div>
 
-</section>
+<footer>
+<p>Proyecto cultural underground – Juanvk</p>
+</footer>
 
 <script>
-document.querySelectorAll(".item").forEach(item=>{
-    item.addEventListener("click", function(e){
-        if(e.target.tagName !== "BUTTON"){
-            const content = this.querySelector(".content");
-            content.style.display = content.style.display === "block" ? "none" : "block";
-        }
+function showSection(id) {
+    var sections = document.querySelectorAll('.section');
+    sections.forEach(function(section) {
+        section.style.display = "none";
     });
-});
+    document.getElementById(id).style.display = "block";
+}
 </script>
 
 </body>
