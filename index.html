@@ -12,29 +12,6 @@ body{
     background: radial-gradient(circle at top, #111 0%, #000 60%);
     color:white;
     text-align:center;
-    overflow-x:hidden;
-}
-
-/* Animación fondo */
-body::before{
-    content:"";
-    position:fixed;
-    width:200%;
-    height:200%;
-    background: repeating-linear-gradient(
-        45deg,
-        rgba(128,0,255,0.05) 0px,
-        rgba(128,0,255,0.05) 2px,
-        transparent 2px,
-        transparent 20px
-    );
-    animation: move 10s linear infinite;
-    z-index:-1;
-}
-
-@keyframes move{
-    from{transform:translate(0,0);}
-    to{transform:translate(-200px,-200px);}
 }
 
 h1{
@@ -54,36 +31,29 @@ h1{
 }
 
 .container{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:25px;
+    max-width:700px;
+    margin:auto;
     padding:20px;
 }
 
-.card{
-    background:rgba(20,20,20,0.9);
+details{
+    background:#111;
     border:1px solid #a020f0;
-    width:250px;
-    padding:20px;
-    border-radius:15px;
-    transition:0.3s;
+    border-radius:10px;
+    padding:15px;
+    margin-bottom:15px;
     cursor:pointer;
+    transition:0.3s;
 }
 
-.card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 0 20px #a020f0;
+details:hover{
+    box-shadow:0 0 15px #a020f0;
 }
 
-.card h3{
-    margin:10px 0;
-    color:#fff;
-}
-
-.card p{
-    font-size:14px;
-    color:#bbb;
+summary{
+    font-weight:bold;
+    font-size:18px;
+    outline:none;
 }
 
 .footer{
@@ -103,141 +73,27 @@ h1{
 
 <div class="container">
 
-<div class="card">
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kumidaico Techno</title>
+<h2>DJs Nacionales</h2>
 
-<style>
-body{
-    margin:0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: radial-gradient(circle at top, #111 0%, #000 60%);
-    color:white;
-    text-align:center;
-    overflow-x:hidden;
-}
+<details>
+<summary>Óscar Mulero</summary>
+<p>Figura clave del techno español desde los años 90. Fundador de PoleGroup y referente del sonido underground europeo.</p>
+</details>
 
-/* Animación fondo */
-body::before{
-    content:"";
-    position:fixed;
-    width:200%;
-    height:200%;
-    background: repeating-linear-gradient(
-        45deg,
-        rgba(128,0,255,0.05) 0px,
-        rgba(128,0,255,0.05) 2px,
-        transparent 2px,
-        transparent 20px
-    );
-    animation: move 10s linear infinite;
-    z-index:-1;
-}
+<details>
+<summary>Reeko</summary>
+<p>Productor y DJ español reconocido por su sonido industrial y contundente dentro de la escena techno internacional.</p>
+</details>
 
-@keyframes move{
-    from{transform:translate(0,0);}
-    to{transform:translate(-200px,-200px);}
-}
+<details>
+<summary>Exium</summary>
+<p>Dúo español de techno industrial con una extensa trayectoria en clubes y festivales europeos.</p>
+</details>
 
-h1{
-    font-size:50px;
-    margin-top:40px;
-    text-transform:uppercase;
-    color:#fff;
-    text-shadow:0 0 10px #a020f0,
-                0 0 20px #a020f0,
-                0 0 40px #6a00ff;
-}
-
-.sub{
-    color:#aaa;
-    margin-bottom:40px;
-    letter-spacing:3px;
-}
-
-.container{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:25px;
-    padding:20px;
-}
-
-.card{
-    background:rgba(20,20,20,0.9);
-    border:1px solid #a020f0;
-    width:250px;
-    padding:20px;
-    border-radius:15px;
-    transition:0.3s;
-    cursor:pointer;
-}
-
-.card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 0 20px #a020f0;
-}
-
-.card h3{
-    margin:10px 0;
-    color:#fff;
-}
-
-.card p{
-    font-size:14px;
-    color:#bbb;
-}
-
-.footer{
-    margin-top:50px;
-    padding:20px;
-    font-size:14px;
-    background:#111;
-    color:#777;
-}
-</style>
-
-</head>
-<body>
-
-<h1>TECHNO</h1>
-<p class="sub">COLECTIVO KUMIDAICO</p>
-
-<div class="container">
-
-<div class="card">
-<h3>DJ Exium</h3>
-<p>Referente del techno industrial español con proyección internacional.</p>
-</div>
-
-<div class="card">
-<h3>Reeko</h3>
-<p>Uno de los productores más influyentes del techno nacional.</p>
-</div>
-
-<div class="card">
-<h3>Óscar Mulero</h3>
-<p>Figura clave del techno underground en España.</p>
-</div>
-
-<div class="card">
-<h3>Lewis Fautzi</h3>
-<p>Sonido oscuro, hipnótico y contundente.</p>
-</div>
-
-</div>
-
-<div class="footer">
-Hecho por el colectivo Kumidaico 🖤
-</div>
-
-</body>
-</html>
-</div>
+<details>
+<summary>Lewis Fautzi</summary>
+<p>Sonido oscuro e hipnótico con presencia habitual en eventos internacionales de techno.</p>
+</details>
 
 </div>
 
