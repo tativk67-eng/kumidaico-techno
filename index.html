@@ -6,112 +6,172 @@
 <title>KUMIDAICO | Archivo Underground</title>
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #000;
-    color: #eee;
+body{
+    margin:0;
+    background:#000;
+    color:#eee;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
-header {
-    text-align: center;
-    padding: 60px 20px;
-    font-size: 40px;
-    letter-spacing: 8px;
-    font-weight: bold;
+header{
+    text-align:center;
+    padding:60px 20px;
+    font-size:40px;
+    letter-spacing:6px;
 }
 
-.intro {
-    max-width: 900px;
-    margin: auto;
-    padding: 20px;
-    text-align: center;
-    line-height: 1.6;
+section{
+    max-width:1000px;
+    margin:auto;
+    padding:40px 20px;
 }
 
-section {
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: auto;
+h2{
+    border-bottom:1px solid #222;
+    padding-bottom:10px;
+    letter-spacing:3px;
 }
 
-h2 {
-    border-bottom: 1px solid #333;
-    padding-bottom: 10px;
-    letter-spacing: 3px;
+.item{
+    border:1px solid #222;
+    padding:15px;
+    margin:15px 0;
+    cursor:pointer;
+    transition:0.3s;
 }
 
-.item {
-    margin: 15px 0;
-    padding: 15px;
-    border: 1px solid #222;
-    cursor: pointer;
-    transition: 0.3s;
+.item:hover{
+    background:#111;
 }
 
-.item:hover {
-    background: #111;
+.content{
+    display:none;
+    margin-top:10px;
+    font-size:14px;
+    color:#bbb;
 }
 
-.content {
-    display: none;
-    padding-top: 10px;
-    font-size: 14px;
-    color: #bbb;
+button{
+    margin-top:10px;
+    padding:8px 15px;
+    background:#111;
+    border:1px solid #333;
+    color:white;
+    cursor:pointer;
 }
 
-a {
-    color: #888;
-    text-decoration: none;
-}
-
-a:hover {
-    color: white;
+button:hover{
+    background:#222;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-KUMIDAICO
-</header>
-
-<div class="intro">
-El techno nació en Detroit en los años 80 como respuesta futurista y urbana al soul y al electro.
-Juan Atkins, Derrick May y Kevin Saunderson construyeron el sonido base.
-Desde ahí evolucionó hacia Europa — Berlín, Birmingham, Madrid — convirtiéndose en una cultura
-underground basada en comunidad, resistencia y sonido industrial.
-</div>
+<header>KUMIDAICO</header>
 
 <section>
 <h2>DJ's</h2>
 
-<div class="item" onclick="toggle(this)">
-Emilio del Río
+<div class="item">
+<strong>Jeff Mills</strong>
 <div class="content">
-Techno hipnótico y profundo.<br>
-<a href="https://www.youtube.com/results?search_query=Emilio+del+Río+techno" target="_blank">Ver en YouTube</a>
+Padre del techno Detroit.
+<br>
+<button onclick="window.open('https://www.youtube.com/results?search_query=Jeff+Mills+techno+set','_blank')">
+Ver sets en YouTube
+</button>
 </div>
 </div>
 
-<div class="item" onclick="toggle(this)">
-Pyramidal Decode
+<div class="item">
+<strong>Surgeon</strong>
 <div class="content">
-Sonido oscuro e hipnótico desde Madrid.<br>
-<a href="https://www.youtube.com/results?search_query=Pyramidal+Decode+techno" target="_blank">Ver en YouTube</a>
+Industrial techno Birmingham.
+<br>
+<button onclick="window.open('https://www.youtube.com/results?search_query=Surgeon+techno+set','_blank')">
+Ver sets en YouTube
+</button>
 </div>
 </div>
 
-<div class="item" onclick="toggle(this)">
-Surgeon
+<div class="item">
+<strong>Ben Klock</strong>
 <div class="content">
-Industrial techno desde Birmingham.<br>
-<a href="https://www.youtube.com/results?search_query=Surgeon+techno+set" target="_blank">Ver en YouTube</a>
+Techno berlinés contundente.
+<br>
+<button onclick="window.open('https://www.youtube.com/results?search_query=Ben+Klock+techno','_blank')">
+Ver sets en YouTube
+</button>
 </div>
 </div>
 
-<div class="item" onclick="toggle(this)">
-Jeff Mills
+</section>
+
+<section>
+<h2>Libros</h2>
+
+<div class="item">
+<strong>Energy Flash – Simon Reynolds</strong>
 <div class="content">
-Uno de los
+Historia completa de la música electrónica.
+<br>
+<button onclick="window.open('https://www.amazon.es/s?k=Energy+Flash+Simon+Reynolds','_blank')">
+Comprar
+</button>
+</div>
+</div>
+
+<div class="item">
+<strong>Techno Rebels – Dan Sicko</strong>
+<div class="content">
+Historia del techno en Detroit.
+<br>
+<button onclick="window.open('https://www.amazon.es/s?k=Techno+Rebels+Dan+Sicko','_blank')">
+Comprar
+</button>
+</div>
+</div>
+
+</section>
+
+<section>
+<h2>Documentales</h2>
+
+<div class="item">
+<strong>High Tech Soul</strong>
+<div class="content">
+Nacimiento del techno Detroit.
+<br>
+<button onclick="window.open('https://www.youtube.com/results?search_query=High+Tech+Soul+documental','_blank')">
+Ver documental
+</button>
+</div>
+</div>
+
+<div class="item">
+<strong>SubBerlin</strong>
+<div class="content">
+Historia del club Tresor.
+<br>
+<button onclick="window.open('https://www.youtube.com/results?search_query=SubBerlin+Tresor+documental','_blank')">
+Ver documental
+</button>
+</div>
+</div>
+
+</section>
+
+<script>
+document.querySelectorAll(".item").forEach(item=>{
+    item.addEventListener("click", function(e){
+        if(e.target.tagName !== "BUTTON"){
+            const content = this.querySelector(".content");
+            content.style.display = content.style.display === "block" ? "none" : "block";
+        }
+    });
+});
+</script>
+
+</body>
+</html>
