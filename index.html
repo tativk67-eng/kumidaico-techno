@@ -53,4 +53,115 @@ h1 {
 
 .music {
   display: none;
-  margin-top: 10
+  margin-top: 10px;
+}
+
+iframe {
+  width: 100%;
+  height: 120px;
+  border-radius: 8px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+<div class="logo">
+  <img src="IMG_20260208_231809.jpg">
+</div>
+
+<h1>KUMIDAICO</h1>
+
+<div class="dj-list">
+
+<div class="dj" onclick="toggleMusic('dj1')">Emilio del Rio
+<div id="dj1" class="music">
+<iframe src="https://www.youtube.com/embed/ScMzIvxBSi4" allowfullscreen></iframe>
+</div>
+</div>
+
+<div class="dj" onclick="toggleMusic('dj2')">Pyramidal Decode
+<div id="dj2" class="music">
+<iframe src="https://www.youtube.com/embed/9bZkp7q19f0" allowfullscreen></iframe>
+</div>
+</div>
+
+<div class="dj" onclick="toggleMusic('dj3')">Surgeon
+<div id="dj3" class="music">
+<iframe src="https://www.youtube.com/embed/ktvTqknDobU" allowfullscreen></iframe>
+</div>
+</div>
+
+<div class="dj" onclick="toggleMusic('dj4')">Jeff Mills
+<div id="dj4" class="music">
+<iframe src="https://www.youtube.com/embed/kXYiU_JCYtU" allowfullscreen></iframe>
+</div>
+</div>
+
+<div class="dj" onclick="toggleMusic('dj5')">Jesús Riaño
+<div id="dj5" class="music">
+<iframe src="https://www.youtube.com/embed/LsoLEjrDogU" allowfullscreen></iframe>
+</div>
+</div>
+
+<div class="dj" onclick="toggleMusic('dj6')">Mike Parker
+<div id="dj6" class="music">
+<iframe src="https://www.youtube.com/embed/hTWKbfoikeg" allowfullscreen></iframe>
+</div>
+</div>
+
+<div class="dj" onclick="toggleMusic('dj7')">Ben Klock
+<div id="dj7" class="music">
+<iframe src="https://www.youtube.com/embed/OPf0YbXqDm0" allowfullscreen></iframe>
+</div>
+</div>
+
+<div class="dj" onclick="toggleMusic('dj8')">Tensal
+<div id="dj8" class="music">
+<iframe src="https://www.youtube.com/embed/fLexgOxsZu0" allowfullscreen></iframe>
+</div>
+</div>
+
+<div class="dj" onclick="toggleMusic('dj9')">Luigi Tozzi
+<div id="dj9" class="music">
+<iframe src="https://www.youtube.com/embed/CevxZvSJLk8" allowfullscreen></iframe>
+</div>
+</div>
+
+<div class="dj" onclick="toggleMusic('dj10')">TKNS
+<div id="dj10" class="music">
+<iframe src="https://www.youtube.com/embed/uelHwf8o7_U" allowfullscreen></iframe>
+</div>
+</div>
+
+<div class="dj" onclick="toggleMusic('dj11')">Neurite
+<div id="dj11" class="music">
+<iframe src="https://www.youtube.com/embed/JGwWNGJdvx8" allowfullscreen></iframe>
+</div>
+</div>
+
+<div class="dj" onclick="toggleMusic('dj12')">Regis
+<div id="dj12" class="music">
+<iframe src="https://www.youtube.com/embed/3tmd-ClpJxA" allowfullscreen></iframe>
+</div>
+</div>
+
+</div>
+</div>
+
+<script>
+function toggleMusic(id) {
+  var element = document.getElementById(id);
+  if (element.style.display === "block") {
+    element.style.display = "none";
+  } else {
+    element.style.display = "block";
+  }
+}
+</script>
+
+</body>
+</html>
