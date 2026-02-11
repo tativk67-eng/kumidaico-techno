@@ -9,13 +9,12 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url('archivo_00000000698471f891ad9e52514c0248.png');
+    background-image: url('file_00000000698471f891ad9e52514c0248.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     color: white;
     text-align: center;
-    background-color: black;
 }
 
 .overlay {
@@ -25,8 +24,13 @@ body {
 }
 
 h1 {
-    font-size: 48px;
-    letter-spacing: 5px;
+    font-size: 50px;
+    letter-spacing: 6px;
+}
+
+h2 {
+    margin-bottom: 40px;
+    letter-spacing: 3px;
 }
 
 .dj {
@@ -42,13 +46,13 @@ h1 {
 
 .info {
     display: none;
-    margin-top: 10px;
-    font-size: 16px;
+    margin-top: 8px;
+    font-size: 15px;
     color: #ccc;
 }
 
 .footer {
-    margin-top: 50px;
+    margin-top: 60px;
     font-size: 14px;
     letter-spacing: 2px;
 }
@@ -56,59 +60,64 @@ h1 {
 </head>
 
 <body>
+
 <div class="overlay">
 
 <h1>KUMIDAICO</h1>
 <h2>TECHNO COLLECTIVE</h2>
 
 <div class="dj" onclick="toggle('emilio')">Emilio del Río</div>
-<div id="emilio" class="info">
-Tema destacado: Hypnotic Industrial Session
-</div>
+<div id="emilio" class="info">Tema destacado: Hypnotic Industrial Session</div>
 
 <div class="dj" onclick="toggle('pyramidal')">Pyramidal Decode</div>
-<div id="pyramidal" class="info">
-Tema destacado: Dark Modular Transmission
-</div>
+<div id="pyramidal" class="info">Tema destacado: Dark Modular Transmission</div>
 
 <div class="dj" onclick="toggle('surgeon')">Surgeon</div>
-<div id="surgeon" class="info">
-Tema destacado: Bad Hands Break
-</div>
+<div id="surgeon" class="info">Tema destacado: Bad Hands Break</div>
 
 <div class="dj" onclick="toggle('jeff')">Jeff Mills</div>
-<div id="jeff" class="info">
-Tema destacado: The Bells
-</div>
+<div id="jeff" class="info">Tema destacado: The Bells</div>
 
 <div class="dj" onclick="toggle('jesus')">Jesús Riaño</div>
-<div id="jesus" class="info">
-Tema destacado: Raw Basement Ritual
-</div>
+<div id="jesus" class="info">Tema destacado: Raw Basement Ritual</div>
 
 <div class="dj" onclick="toggle('mike')">Mike Parker</div>
-<div id="mike" class="info">
-Tema destacado: Lustration 3
-</div>
+<div id="mike" class="info">Tema destacado: Lustration 3</div>
 
 <div class="dj" onclick="toggle('ben')">Ben Klock</div>
-<div id="ben" class="info">
-Tema destacado: Subzero
-</div>
+<div id="ben" class="info">Tema destacado: Subzero</div>
 
 <div class="dj" onclick="toggle('tensal')">Tensal</div>
-<div id="tensal" class="info">
-Tema destacado: Soma Transmission
-</div>
+<div id="tensal" class="info">Tema destacado: Soma Transmission</div>
 
 <div class="dj" onclick="toggle('luigi')">Luigi Tozzi</div>
-<div id="luigi" class="info">
-Tema destacado: Deep Resonance
-</div>
+<div id="luigi" class="info">Tema destacado: Deep Resonance</div>
 
 <div class="dj" onclick="toggle('tkns')">TKNS</div>
-<div id="tkns" class="info">
-Tema destacado: Industrial Pulse
+<div id="tkns" class="info">Tema destacado: Industrial Pulse</div>
+
+<div class="dj" onclick="toggle('neurite')">Neurite</div>
+<div id="neurite" class="info">Tema destacado: Dark Structure</div>
+
+<div class="dj" onclick="toggle('regis')">Regis</div>
+<div id="regis" class="info">Tema destacado: Hidden In This Is The Light That You Miss</div>
+
+<div class="footer">
+COLECTIVO KUMIDAICO © 2026
 </div>
 
-<div class="dj" onclick="toggle('neurite
+</div>
+
+<script>
+function toggle(id) {
+    var element = document.getElementById(id);
+    if (element.style.display === "block") {
+        element.style.display = "none";
+    } else {
+        element.style.display = "block";
+    }
+}
+</script>
+
+</body>
+</html>
