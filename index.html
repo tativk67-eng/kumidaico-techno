@@ -4,100 +4,127 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TECHNO EXPERIENCE</title>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
 
 <style>
+
 body{
 margin:0;
-background:linear-gradient(180deg,#0a0a0a,#000);
-color:#cfcfcf;
-font-family:'Orbitron',sans-serif;
+background:linear-gradient(180deg,#0c0c0c,#000);
+color:#e0e0e0;
+font-family:'Rajdhani', sans-serif;
+letter-spacing:1px;
 }
 
 header{
 text-align:center;
-padding:100px 20px 60px;
-border-bottom:1px solid #1a1a1a;
+padding:90px 20px 60px;
+border-bottom:1px solid #111;
 }
 
-header h1{
-font-weight:400;
+h1{
+font-weight:600;
 letter-spacing:8px;
-font-size:42px;
-color:#e0e0e0;
+font-size:38px;
 }
 
-header p{
+.descripcion{
 max-width:800px;
 margin:30px auto;
-font-size:14px;
 color:#9a9a9a;
 line-height:1.8;
+font-size:15px;
 }
 
 section{
-padding:70px 12%;
+padding:70px 15%;
 border-bottom:1px solid #111;
 }
 
 h2{
 font-weight:400;
 letter-spacing:4px;
-color:#aaaaaa;
 margin-bottom:40px;
+color:#b0b0b0;
 }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px;
-}
-
-.card{
-background:#0f0f0f;
-padding:25px;
-border:1px solid #1f1f1f;
-transition:0.3s;
-}
-
-.card:hover{
-border-color:#555;
-transform:translateY(-4px);
-}
-
-.card a{
+img{
+width:100%;
+max-width:500px;
 display:block;
-margin-top:10px;
+margin:40px auto 10px;
+}
+
+.credito{
+text-align:center;
 font-size:12px;
-color:#888;
+color:#666;
+}
+
+.credito a{
+color:#666;
 text-decoration:none;
 }
 
-.card a:hover{
-color:#fff;
+.credito a:hover{
+color:white;
 }
 
-.images{
-display:flex;
-flex-wrap:wrap;
-gap:40px;
-justify-content:center;
-}
-
-.images img{
-width:260px;
-border:1px solid #222;
-}
-
-.footer-quote{
+nav{
 text-align:center;
-padding:80px 20px;
-font-style:italic;
+padding:40px 0;
+}
+
+nav button{
+background:none;
+border:1px solid #222;
+color:#888;
+padding:10px 20px;
+margin:6px;
+cursor:pointer;
+letter-spacing:2px;
+transition:0.3s;
+}
+
+nav button:hover{
+border-color:#555;
+color:white;
+}
+
+.section{
+display:none;
+max-width:900px;
+margin:auto;
+}
+
+a{
 color:#777;
+text-decoration:none;
+}
+
+a:hover{
+color:white;
+}
+
+.dj{
+margin-bottom:25px;
+}
+
+.dj p{
+color:#888;
+font-size:14px;
+margin:5px 0 0 0;
+}
+
+.footer{
+padding:80px 20px;
+text-align:center;
+color:#666;
+font-style:italic;
 border-top:1px solid #111;
 }
-a{color:#888;}
-a:hover{color:#fff;}
+
 </style>
 </head>
 
@@ -105,178 +132,13 @@ a:hover{color:#fff;}
 
 <header>
 <h1>TECHNO EXPERIENCE</h1>
-<p>
-TECHNO EXPERIENCE es un colectivo dedicado a la cultura techno en su forma más pura:
-sonido, historia, resistencia y comunidad. 
-No es solo música; es identidad, es profundidad, es búsqueda constante.
-Inspirado en Detroit, consolidado en Berlín y reinterpretado en Madrid.
-</p>
+
+<div class="descripcion">
+Colectivo dedicado a la cultura techno en su forma más pura.
+Investigación sonora, historia, comunidad y escena contemporánea.
+De Detroit a Berlín, de Berlín a Madrid.
+</div>
 </header>
 
-<section>
-<h2>IMAGEN DEL COLECTIVO</h2>
-<div class="images">
-<div>
-<img src="foto1.jpg" alt="Kumidaico">
-<p><a href="https://www.instagram.com/kumidaico/" target="_blank">@kumidaico</a></p>
-</div>
-<div>
-<img src="foto2.jpg" alt="JuanVK">
-<p><a href="https://www.instagram.com/juantativk/" target="_blank">@juantativk</a></p>
-</div>
-</div>
-</section>
-
-<section>
-<h2>HISTORIA DEL TECHNO</h2>
-<p>
-El techno nace en Detroit en los años 80 de la mano de Juan Atkins, Derrick May y Kevin Saunderson,
-conocidos como The Belleville Three. Influenciados por Kraftwerk, el electro y el funk,
-crearon una música futurista que hablaba de máquinas, automatización y esperanza en medio de la decadencia industrial.
-</p>
-<p>
-Jeff Mills y Underground Resistance radicalizaron el movimiento, convirtiéndolo en mensaje político y resistencia cultural.
-El sonido cruzó el Atlántico y, tras la caída del Muro de Berlín, Alemania adoptó el techno como símbolo de libertad.
-Berlín transformó fábricas abandonadas en templos electrónicos.
-</p>
-<p>
-En Reino Unido, proyectos como Orbital, Surgeon o Regis desarrollaron un techno más industrial y crudo.
-El sonido se volvió hipnótico, repetitivo y mental.
-</p>
-<p>
-En España, especialmente en Madrid, el techno evolucionó hacia una identidad profunda y elegante,
-con artistas como Oscar Mulero consolidando una escena respetada internacionalmente.
-Hoy el techno es cultura global, pero mantiene su esencia: ritmo, oscuridad y comunidad.
-</p>
-</section>
-
-<section>
-<h2>PELÍCULAS Y DOCUMENTALES</h2>
-<p><a href="https://www.youtube.com/results?search_query=High+Tech+Soul+Detroit" target="_blank">High Tech Soul – Historia de Detroit</a></p>
-<p><a href="https://www.youtube.com/results?search_query=SubBerlin+Tresor" target="_blank">SubBerlin – Historia del Tresor</a></p>
-<p><a href="https://www.youtube.com/results?search_query=We+Call+It+Techno" target="_blank">We Call It Techno</a></p>
-<p><a href="https://www.youtube.com/results?search_query=Berlin+Calling" target="_blank">Berlin Calling</a></p>
-</section>
-
-<section>
-<h2>LIBROS</h2>
-<p><a href="https://www.amazon.es/s?k=Energy+Flash+Simon+Reynolds" target="_blank">Energy Flash – Simon Reynolds</a></p>
-<p><a href="https://www.amazon.es/s?k=Techno+Rebels+Dan+Sicko" target="_blank">Techno Rebels – Dan Sicko</a></p>
-<p><a href="https://www.amazon.es/s?k=Der+Klang+der+Familie" target="_blank">Der Klang der Familie</a></p>
-</section>
-
-<section>
-<h2>DJS – ESPAÑA (Madrid destacado)</h2>
-<div class="grid">
-
-<div class="card">
-<strong>Oscar Mulero (Madrid)</strong>
-<p>Pionero del techno hipnótico español y referencia mundial.</p>
-<a href="https://www.youtube.com/results?search_query=Oscar+Mulero" target="_blank">Escuchar</a>
-</div>
-
-<div class="card">
-<strong>Reeko</strong>
-<p>Industrial oscuro con identidad contundente.</p>
-<a href="https://www.youtube.com/results?search_query=Reeko+techno" target="_blank">Escuchar</a>
-</div>
-
-<div class="card">
-<strong>Exium</strong>
-<p>Dúo referente del techno mental e industrial europeo.</p>
-<a href="https://www.youtube.com/results?search_query=Exium+techno" target="_blank">Escuchar</a>
-</div>
-
-<div class="card">
-<strong>Christian Wunsch</strong>
-<p>Precisión técnica y potencia rítmica.</p>
-<a href="https://www.youtube.com/results?search_query=Christian+Wunsch" target="_blank">Escuchar</a>
-</div>
-
-<div class="card">
-<strong>Adriana López</strong>
-<p>Minimalismo hipnótico de carácter profundo.</p>
-<a href="https://www.youtube.com/results?search_query=Adriana+Lopez+techno" target="_blank">Escuchar</a>
-</div>
-
-<div class="card">
-<strong>Tensal (Madrid)</strong>
-<p>Techno crudo, directo y contemporáneo.</p>
-<a href="https://www.youtube.com/results?search_query=Tensal+techno" target="_blank">Escuchar</a>
-</div>
-
-</div>
-</section>
-
-<section>
-<h2>DJS – ALEMANIA</h2>
-<div class="grid">
-<div class="card">
-<strong>Ben Klock</strong>
-<p>Sonido berlinés potente y minimal.</p>
-<a href="https://www.youtube.com/results?search_query=Ben+Klock" target="_blank">Escuchar</a>
-</div>
-
-<div class="card">
-<strong>Marcel Dettmann</strong>
-<p>Industrial elegante y oscuro.</p>
-<a href="https://www.youtube.com/results?search_query=Marcel+Dettmann" target="_blank">Escuchar</a>
-</div>
-
-<div class="card">
-<strong>Rødhåd</strong>
-<p>Atmosférico, profundo y emocional.</p>
-<a href="https://www.youtube.com/results?search_query=Rodhad" target="_blank">Escuchar</a>
-</div>
-
-<div class="card">
-<strong>Kobosil</strong>
-<p>Hard techno berlinés contemporáneo.</p>
-<a href="https://www.youtube.com/results?search_query=Kobosil" target="_blank">Escuchar</a>
-</div>
-</div>
-</section>
-
-<section>
-<h2>DJS – JAPÓN</h2>
-<div class="grid">
-<div class="card">
-<strong>DJ Nobu</strong>
-<p>Texturas hipnóticas y experimentales.</p>
-<a href="https://www.youtube.com/results?search_query=DJ+Nobu" target="_blank">Escuchar</a>
-</div>
-
-<div class="card">
-<strong>Wata Igarashi</strong>
-<p>Futurismo electrónico y precisión sonora.</p>
-<a href="https://www.youtube.com/results?search_query=Wata+Igarashi" target="_blank">Escuchar</a>
-</div>
-
-<div class="card">
-<strong>Ken Ishii</strong>
-<p>Embajador histórico del techno japonés.</p>
-<a href="https://www.youtube.com/results?search_query=Ken+Ishii" target="_blank">Escuchar</a>
-</div>
-</div>
-</section>
-
-<section>
-<h2>SALAS – ESPAÑA</h2>
-<p><a href="https://www.instagram.com/wave.mallorca/" target="_blank">Wave – Mørk (Mallorca)</a></p>
-<p><a href="https://www.instagram.com/lanna.club/" target="_blank">Lanna Club (Gijón)</a></p>
-<p><a href="https://www.instagram.com/speka.club/" target="_blank">Speka (Madrid)</a></p>
-<p><a href="https://www.instagram.com/studio76madrid/" target="_blank">Studio76 (Madrid)</a></p>
-<p><a href="https://www.instagram.com/metro_dance_club/" target="_blank">Metro Dance Club (Alicante)</a></p>
-<p><a href="https://www.instagram.com/lasosacion/" target="_blank">Lasosaciøn (Madrid)</a></p>
-</section>
-
-<div class="footer-quote">
-“El más puro TECHNO palpita fuerte y sensible, es insobornable, valiente y único.
-El más puro TECHNO rechaza lo obsceno y detecta la perversión.
-El más puro TECHNO no finge el amor ni finge la libertad.
-TECHNO somos tú y yo.”  
-— Sonia Briz
-</div>
-
-</body>
-</html>
+<img src="Imagen_20260208_231809.jpg">
+<p class
