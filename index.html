@@ -9,69 +9,107 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-image: url("file_00000000698471f891ad9e52514c0248.png");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background: black;
   color: white;
+}
+
+header {
   text-align: center;
-}
-
-.contenido {
-  background: rgba(0,0,0,0.85);
-  padding: 20px;
-  min-height: 100vh;
-}
-
-.logo {
-  width: 220px;
-  margin-top: 20px;
+  padding: 40px 20px;
+  border-bottom: 1px solid #222;
 }
 
 h1 {
-  font-size: 55px;
+  font-size: 50px;
   letter-spacing: 10px;
 }
 
-.dj {
-  background: rgba(255,255,255,0.1);
-  margin: 12px auto;
-  padding: 15px;
-  width: 90%;
-  max-width: 500px;
-  cursor: pointer;
-  border-radius: 10px;
-  transition: 0.3s;
+nav a {
+  color: crimson;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 14px;
 }
 
-.dj:hover {
-  background: crimson;
+section {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  border-bottom: 1px solid #222;
+  padding-bottom: 10px;
+}
+
+.item {
+  margin: 15px 0;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.item:hover {
+  color: crimson;
 }
 </style>
 </head>
 
 <body>
 
-<div class="contenido">
-
-<img src="IMG_20260208_231809.jpg" class="logo">
-
+<header>
 <h1>KUMIDAICO</h1>
+<nav>
+<a href="#historia">Historia</a>
+<a href="#djs">DJs</a>
+<a href="#eventos">Eventos</a>
+<a href="#libros">Libros</a>
+<a href="#documentales">Documentales</a>
+</nav>
+</header>
 
-<div class="dj" onclick="abrir('Emilio del Rio techno')">Emilio del Rio</div>
-<div class="dj" onclick="abrir('Pyramidal Decode techno')">Pyramidal Decode</div>
-<div class="dj" onclick="abrir('Surgeon techno')">Surgeon</div>
-<div class="dj" onclick="abrir('Jeff Mills techno')">Jeff Mills</div>
-<div class="dj" onclick="abrir('Jesús Riaño techno')">Jesús Riaño</div>
-<div class="dj" onclick="abrir('Mike Parker techno')">Mike Parker</div>
-<div class="dj" onclick="abrir('Ben Klock techno')">Ben Klock</div>
-<div class="dj" onclick="abrir('Tensal techno')">Tensal</div>
-<div class="dj" onclick="abrir('Luigi Tozzi techno')">Luigi Tozzi</div>
-<div class="dj" onclick="abrir('TKNS techno')">TKNS</div>
-<div class="dj" onclick="abrir('Neurite techno')">Neurite</div>
-<div class="dj" onclick="abrir('Regis techno')">Regis</div>
+<section id="historia">
+<h2>Cómo empezó todo</h2>
+<p>
+El techno nació en Detroit en los años 80 con pioneros como Juan Atkins,
+Derrick May y Kevin Saunderson. Influenciado por la música electrónica europea,
+el funk y la visión futurista afroamericana, se convirtió en un movimiento cultural global.
+</p>
+<p>
+En Europa, Berlín consolidó el sonido oscuro e industrial tras la caída del muro,
+con clubs como Tresor marcando la historia.
+</p>
+</section>
 
-</div>
+<section id="djs">
+<h2>DJs Referencia</h2>
+<div class="item" onclick="abrir('Jeff Mills techno')">Jeff Mills</div>
+<div class="item" onclick="abrir('Surgeon techno')">Surgeon</div>
+<div class="item" onclick="abrir('Regis techno')">Regis</div>
+<div class="item" onclick="abrir('Ben Klock techno')">Ben Klock</div>
+<div class="item" onclick="abrir('Luigi Tozzi techno')">Luigi Tozzi</div>
+<div class="item" onclick="abrir('Mike Parker techno')">Mike Parker</div>
+<div class="item" onclick="abrir('Tensal techno')">Tensal techno</div>
+</section>
+
+<section id="eventos">
+<h2>Eventos Cercanos</h2>
+<p>Próximamente en Madrid...</p>
+<p>KUMIDAICO Session 001 — TBA</p>
+</section>
+
+<section id="libros">
+<h2>Libros</h2>
+<div class="item">Energy Flash — Simon Reynolds</div>
+<div class="item">Der Klang der Familie</div>
+<div class="item">Techno Rebels — Dan Sicko</div>
+</section>
+
+<section id="documentales">
+<h2>Películas / Documentales</h2>
+<div class="item">High Tech Soul (Detroit)</div>
+<div class="item">SubBerlin (Historia de Tresor)</div>
+<div class="item">We Call It Techno</div>
+</section>
 
 <script>
 function abrir(nombre) {
