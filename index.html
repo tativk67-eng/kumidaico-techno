@@ -5,229 +5,116 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kumidaico Techno</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+
 <style>
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #000;
+    font-family: 'Rajdhani', sans-serif;
+    background: #000 url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
     color: #fff;
     text-align: center;
 }
 
 header {
-    padding: 60px 20px;
-    background: linear-gradient(black, #111);
+    padding: 80px 20px;
+    background: linear-gradient(black, #0a0a0a);
 }
 
 h1 {
-    font-size: 42px;
-    letter-spacing: 4px;
+    font-size: 48px;
+    letter-spacing: 8px;
+    text-shadow: 0 0 12px rgba(0,255,204,0.3);
 }
 
 nav {
-    margin: 40px 0;
+    margin: 50px 0;
 }
 
 nav button {
-    background: #111;
-    color: #fff;
-    border: 1px solid #333;
-    padding: 12px 22px;
+    background: transparent;
+    color: #aaa;
+    border: 1px solid #444;
+    padding: 14px 28px;
     margin: 6px;
-    cursor: pointer;
+    letter-spacing: 3px;
+    font-weight: 600;
     transition: 0.3s;
     font-size: 14px;
 }
 
 nav button:hover {
-    background: #fff;
-    color: #000;
+    background: #111;
+    border: 1px solid #00ffcc;
+    color: #00ffcc;
 }
 
 .section {
     display: none;
-    padding: 50px 20px;
+    padding: 60px 20px;
     max-width: 900px;
     margin: auto;
+    border-top: 1px solid #222;
 }
 
 img {
     width: 90%;
     max-width: 600px;
-    margin: 30px auto;
+    margin: 40px auto;
     display: block;
-    border-radius: 8px;
-    box-shadow: 0 0 20px #111;
+    border-radius: 6px;
+    box-shadow: 0 0 25px #000;
+    opacity: 0.9;
 }
 
 a {
     color: #00ffcc;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #ffffff;
 }
 
 h2 {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    letter-spacing: 4px;
 }
 
 h3 {
     margin-top: 40px;
-    color: #aaa;
+    color: #777;
+    letter-spacing: 2px;
 }
 
 footer {
-    padding: 60px 20px;
-    background: #111;
-    margin-top: 60px;
+    padding: 80px 20px;
+    background: #0a0a0a;
+    margin-top: 80px;
     font-size: 15px;
 }
 
+/* Instagram estilo industrial */
+
+.instagram-link {
+    display: inline-block;
+    margin-top: 20px;
+    letter-spacing: 3px;
+    font-size: 14px;
+    color: #00ffcc;
+    border-bottom: 1px solid #222;
+    padding-bottom: 5px;
+    transition: 0.3s;
+}
+
+.instagram-link:hover {
+    color: #fff;
+    border-bottom: 1px solid #00ffcc;
+}
+
+/* FRASE ARTÍSTICA */
+
 .frase {
-    margin-top: 40px;
-    font-style: italic;
-    line-height: 1.6;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-</style>
-</head>
-
-<body>
-
-<header>
-<h1>KUMIDAICO TECHNO</h1>
-<p>Archivo underground · Cultura · Historia · Escena</p>
-</header>
-
-<img src="IMG_20260208_231809.jpg">
-<img src="file_00000000698471f891ad9e52514c0248.png">
-
-<nav>
-<button onclick="showSection('historia')">Historia</button>
-<button onclick="showSection('libros')">Libros</button>
-<button onclick="showSection('peliculas')">Películas</button>
-<button onclick="showSection('djs')">DJs</button>
-<button onclick="showSection('eventos')">Salas</button>
-</nav>
-
-<div id="historia" class="section">
-<h2>Historia del Techno</h2>
-<p>
-El techno nace en Detroit en los años 80 gracias a Juan Atkins, Derrick May y Kevin Saunderson.
-Inspirado por el futurismo y la identidad industrial, se convierte en una revolución cultural global.
-</p>
-<p>
-Tras la caída del muro, Berlín toma el relevo como epicentro del techno underground.
-Desde allí la cultura se expande por Europa y el mundo.
-</p>
-</div>
-
-<div id="libros" class="section">
-<h2>Libros esenciales</h2>
-
-<p><a href="https://www.amazon.es/s?k=Energy+Flash+Simon+Reynolds" target="_blank">Energy Flash – Simon Reynolds</a></p>
-
-<p><a href="https://www.amazon.es/s?k=Techno+Rebels+Dan+Sicko" target="_blank">Techno Rebels – Dan Sicko</a></p>
-
-<p><a href="https://www.amazon.es/s?k=Der+Klang+der+Familie" target="_blank">Der Klang der Familie</a></p>
-
-<p><a href="https://www.amazon.es/s?k=Join+The+Future+Matt+Anniss" target="_blank">Join The Future – Matt Anniss</a></p>
-
-<p><a href="https://www.amazon.es/s?k=Last+Night+a+DJ+Saved+My+Life" target="_blank">Last Night a DJ Saved My Life – Bill Brewster</a></p>
-
-</div>
-
-<div id="peliculas" class="section">
-<h2>Películas y Documentales</h2>
-
-<p><a href="https://www.youtube.com/results?search_query=Berlin+Calling" target="_blank">Berlin Calling</a></p>
-
-<p><a href="https://www.youtube.com/results?search_query=We+Call+It+Techno+Documentary" target="_blank">We Call It Techno</a></p>
-
-<p><a href="https://www.youtube.com/results?search_query=SubBerlin+Story+of+Tresor" target="_blank">SubBerlin – Historia de Tresor</a></p>
-
-<p><a href="https://www.youtube.com/results?search_query=High+Tech+Soul+Detroit+Techno+Documentary" target="_blank">High Tech Soul</a></p>
-
-</div>
-
-<div id="djs" class="section">
-<h2>DJs de referencia</h2>
-
-<h3>Detroit</h3>
-<p><a href="https://www.youtube.com/results?search_query=Juan+Atkins+DJ+set" target="_blank">Juan Atkins</a></p>
-<p><a href="https://www.youtube.com/results?search_query=Derrick+May+DJ+set" target="_blank">Derrick May</a></p>
-<p><a href="https://www.youtube.com/results?search_query=Kevin+Saunderson+DJ+set" target="_blank">Kevin Saunderson</a></p>
-<p><a href="https://www.youtube.com/results?search_query=Jeff+Mills+DJ+set" target="_blank">Jeff Mills</a></p>
-
-<h3>Berlín</h3>
-<p><a href="https://www.youtube.com/results?search_query=Ben+Klock+DJ+set" target="_blank">Ben Klock</a></p>
-<p><a href="https://www.youtube.com/results?search_query=Marcel+Dettmann+DJ+set" target="_blank">Marcel Dettmann</a></p>
-<p><a href="https://www.youtube.com/results?search_query=Rødhåd+DJ+set" target="_blank">Rødhåd</a></p>
-<p><a href="https://www.youtube.com/results?search_query=Ellen+Allien+DJ+set" target="_blank">Ellen Allien</a></p>
-
-<h3>España</h3>
-<p><a href="https://www.youtube.com/results?search_query=Oscar+Mulero+DJ+set" target="_blank">Oscar Mulero</a></p>
-<p><a href="https://www.youtube.com/results?search_query=Reeko+DJ+set" target="_blank">Reeko</a></p>
-<p><a href="https://www.youtube.com/results?search_query=Exium+DJ+set" target="_blank">Exium</a></p>
-<p><a href="https://www.youtube.com/results?search_query=Christian+Wunsch+DJ+set" target="_blank">Christian Wunsch</a></p>
-<p><a href="https://www.youtube.com/results?search_query=Emilio+del+Rio+DJ+set" target="_blank">Emilio del Río</a></p>
-
-<h3>Actualidad</h3>
-<p><a href="https://www.youtube.com/results?search_query=DVS1+DJ+set" target="_blank">DVS1</a></p>
-<p><a href="https://www.youtube.com/results?search_query=Blawan+DJ+set" target="_blank">Blawan</a></p>
-<p><a href="https://www.youtube.com/results?search_query=I+Hate+Models+DJ+set" target="_blank">I Hate Models</a></p>
-<p><a href="https://www.youtube.com/results?search_query=Paula+Temple+DJ+set" target="_blank">Paula Temple</a></p>
-
-</div>
-
-<div id="eventos" class="section">
-<h2>Salas y Escena Actual</h2>
-
-<h3>Mallorca</h3>
-<p><a href="https://www.instagram.com/mork.club/" target="_blank"><strong>Mørk</strong> – Sala Wave</a></p>
-
-<h3>Gijón</h3>
-<p><a href="https://www.instagram.com/lannaclub/" target="_blank"><strong>Lanna Club</strong></a></p>
-
-<h3>Madrid</h3>
-<p><a href="https://www.instagram.com/speka_madrid/" target="_blank"><strong>Speka</strong></a></p>
-<p><a href="https://www.instagram.com/studio76madrid/" target="_blank"><strong>Studio 76</strong></a></p>
-<p><a href="https://www.instagram.com/lasterclub/" target="_blank"><strong>Laster Club</strong></a></p>
-<p><a href="https://www.instagram.com/lasocion_/" target="_blank"><strong>Lasociøn</strong></a></p>
-
-<h3>Alicante</h3>
-<p><a href="https://www.instagram.com/metrodanceclub/" target="_blank"><strong>La Metro Dance Club</strong></a></p>
-
-</div>
-
-<footer>
-
-<div class="frase">
-El más puro TECHNO palpita fuerte y sensible, es insobornable, valiente y único.  
-El más puro TECHNO rechaza lo obsceno y detecta la perversión.  
-El más puro TECHNO no finge el amor ni finge la libertad.  
-TECHNO somos tú y yo.  
-<br><br>
-— Sonia Briz
-</div>
-
-<p style="margin-top:40px;">Proyecto cultural underground – Juanvk</p>
-
-</footer>
-
-<script>
-function showSection(id) {
-    var sections = document.querySelectorAll('.section');
-    sections.forEach(function(section) {
-        section.style.display = "none";
-    });
-    document.getElementById(id).style.display = "block";
-}
-</script>
-
-</body>
-</html>
+    margin-top
