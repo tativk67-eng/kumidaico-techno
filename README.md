@@ -1,1 +1,1 @@
-kkkkk
+kumidaico-techno
